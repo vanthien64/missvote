@@ -1,0 +1,985 @@
+@keyframes chayvao {
+    from
+    {
+        opacity: 0;
+        transform: scale(1.5);
+    }
+    to
+    {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+@keyframes chayra {
+    from
+    {
+        opacity: 1;
+        transform: scale(1);
+    }
+    to
+    {
+        opacity: 0;
+        transform: scale(1.5);
+    }
+}
+
+@keyframes chayvaoanh {
+    from
+    {
+        opacity: 0;
+        transform: translateX(500px) scale(2)
+        
+    }
+    to
+    {
+        opacity: 1;
+        transform: translateX(0) scale(1)
+    }
+}
+@keyframes chayraanh {
+    from
+    {
+        opacity: 1;
+        transform: translateX(0) scale(1)
+    }
+    to
+    {
+        opacity: 0;
+        transform: translateX(500px) scale(2)
+    }
+}
+@keyframes chaylentuduoi {
+    from
+    {
+        opacity: 0;
+        transform: translateY(400px)
+        
+    }
+    to
+    {
+        opacity: 1;
+        transform: translateY(0) 
+    }
+}
+@keyframes chayhienraxuongtuduoi {
+    from
+    {
+        opacity: 0;
+        transform: translateY(-200px)
+        
+    }
+    to
+    {
+        opacity: 1;
+        transform: translateY(0px) 
+    }
+}
+@keyframes chaymatxuongtuduoi {
+    from
+    {
+        opacity: 1;
+        transform: translateY(0px) ;
+        
+    }
+    to
+    {
+        opacity: 0;
+        transform: translateY(-200px);
+    }
+}
+@keyframes chayxuongtutren {
+    from
+    {
+        opacity: 1;
+        transform: translateY(0) 
+        
+    }
+    to
+    {
+        opacity: 0;
+        transform: translateY(400px)
+    }
+}
+@keyframes chaytuphaisang
+{
+    from
+    {
+        opacity: 0;
+        transform: translateX(400px) 
+        
+    }
+    to
+    {
+        opacity: 1;
+        transform: translateX(0px)
+    }
+}
+@keyframes chaytuphaira
+{
+    from
+    {
+        opacity: 1;
+        transform: translateX(0px)
+        
+    }
+    to
+    {
+        opacity: 0;
+        transform: translateX(130px)
+    }
+}
+body
+{
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Roboto', sans-serif;
+}
+.missvote
+{
+margin: 0;
+}
+.missvote-header
+{
+background-color: #57462D;
+margin-top: 0px;
+display: flex;
+padding-left: 750px;
+position: fixed;
+width: 100%;
+z-index: 2;
+}
+.missvote-header_selection
+{
+position: relative;
+margin: 0px 16px;
+color: white;
+padding: 26px 0;
+font-size: 20px;
+margin-right: 45px;
+font-weight: 600;
+
+}
+.missvote-header_selection:hover
+{
+    cursor: pointer;
+}
+.chinh
+{
+   color: rgb(235, 159, 8);
+}
+.chinh:hover
+{
+    color: white;
+}
+.chinh::after
+{
+    position: absolute;
+    content:"";
+    background: rgb(235, 159, 8);
+    width: 125%;
+    height: 5px;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    top:70.5px;
+    right:-75%;
+    border-radius: 4px ;
+}
+.missvote-header_selection:hover::after
+{
+    position: absolute;
+    content:"";
+    background: rgb(235, 159, 8);
+    width: 125%;
+    height: 5px;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    top:70.5px;
+    right:-75%;
+    border-radius: 4px ;
+}
+.missvote-body_imgprofile
+{
+    width: 100%;
+    height: 600px;
+}
+.missvote-body_imgprofileprogram
+{
+width: 100%;
+height: 100%;
+margin-top: 75px;
+}
+.missvote-body_content
+{
+width: 100%;
+height: 600px;
+background-color: white;
+padding-top: 120px;
+display: none;
+}
+.missvote-body_content_detail
+{
+background-color: #F7ECDC;
+display:none;
+margin-top: 70px;
+margin-left: 100px;
+margin-right: 100px;
+border-radius: 16px;
+height: 600px;
+animation: chayvao ease-in-out 1s;
+}
+.missvote-body_content_detail_infor
+{
+position: relative;
+padding: 70px;
+margin-left: 120px;
+padding-bottom: 40px;
+}
+.tvote{
+    position: absolute;
+    font-size: 80px;
+    font-weight: 500;
+    left:20px;
+}
+.buoc1
+{
+    position: absolute;
+    opacity: 0.7;
+    font-size: 150px;
+    color:#f3cbb3;
+    top:20px;
+    left: -50px;
+    font-weight: 600;
+}
+.chitiettvote
+{
+    display: block;
+    width: 500px;
+    margin-top: 120px;
+    margin-left: -90px;
+    font-weight: 600;
+}
+.chutvote
+{
+    color:rgb(12, 216, 12);
+}
+.nutxemthem
+{
+    width:130px;
+    height: 40px;
+    border: none;
+    border-radius: 4px;
+    background-color: #cb8b28;
+    margin-top: 20px;
+    color:white;
+    font-size: 18px;
+    font-weight: 600;
+    margin-left: -90px;
+    cursor: pointer;
+}
+.nutxemthem:hover
+{
+    box-shadow: 3px 6px 15px 1px rgb(117, 116, 116);
+}
+.anhtien
+{
+    display: none;
+    width: 420px;
+    height: 520px;
+    margin-top: -510px;
+    margin-left: 500px;
+    border-top-left-radius: 50% ;
+    border-top-right-radius: 50% ;
+    animation: chayvaoanh ease-out 1s;
+}
+.baoquathoatdongganday
+{
+    width:100%;
+    height: 850px;
+}
+.hoatdongganday
+{
+    display: none;
+    width:100%;
+    height: 400px;
+    animation: chaylentuduoi ease-in-out 1s
+}
+.hoatdongganday_dau
+{
+    position: relative;
+    padding: 70px;
+    margin-left: 120px;
+    
+}
+.dau
+{
+    position: absolute;
+    font-size: 80px;
+    font-weight: 500;
+    left:30px;
+    top:-10px;
+    z-index: 1;
+}
+.buoc2
+{
+    position: absolute;
+    font-size: 150px;
+    color:#f3cbb3;
+    opacity: 0.7;
+    top: -130px;
+    left:-60px;
+    font-weight: 600;
+}
+.danhsachhoatdongganday
+{
+    display: flex;
+}
+.daudanhsachhoatdongganday1
+{
+width:40%;
+background-color: rgb(206, 139, 6);
+height: 70px;
+margin-top: 60px;
+border:none;
+border-top-left-radius: 8px ;
+border-bottom-left-radius: 8px ;
+position: relative;
+}
+.daudanhsachhoatdongganday1::after
+{
+    content: "";
+    width:15px;
+    height: 15px;
+    background-color: white;
+    position: absolute;
+    border-radius: 50%;
+    top:-9px;
+    right: -9px;
+    z-index: 1;
+}
+.daudanhsachhoatdongganday1::before
+{
+    content: "";
+    width:15px;
+    height: 15px;
+    background-color: white;
+    position: absolute;
+    border-radius: 50%;
+    top:64px;
+    right: -9px;
+    z-index: 1;
+}
+.daudanhsachhoatdongganday2
+{
+width:20%;
+background-color: rgb(206, 139, 6);
+height: 70px;
+margin-top: 60px;
+border-left: 3px dashed white;
+position: relative;
+}
+.daudanhsachhoatdongganday2::after
+{
+    content: "";
+    width:15px;
+    height: 15px;
+    background-color: white;
+    position: absolute;
+    border-radius: 50%;
+    top:-9px;
+    right: -9px;
+    z-index: 1;
+}
+.daudanhsachhoatdongganday2::before
+{
+    content: "";
+    width:15px;
+    height: 15px;
+    background-color: white;
+    position: absolute;
+    border-radius: 50%;
+    top:64px;
+    right: -9px;
+    z-index: 1;
+}
+.daudanhsachhoatdongganday3
+{
+width:20%;
+background-color: rgb(197, 141, 30);
+height: 70px;
+margin-top: 60px;
+border-left: 3px dashed white;
+position: relative;
+border-top-right-radius: 8px;
+border-bottom-right-radius: 8px;
+}
+.danhsachhoatdongganday1
+{
+    width:40%;
+    background-color: #cad2d6;
+    height: 70px;
+    margin-top: 60px;
+    border:none;
+    border-top-left-radius: 8px ;
+    border-bottom-left-radius: 8px ;
+    position: relative;
+}
+.danhsachhoatdongganday1::after
+{
+    content: "";
+    width:15px;
+    height: 15px;
+    background-color: white;
+    position: absolute;
+    border-radius: 50%;
+    top:-9px;
+    right: -9px;
+    z-index: 1;
+}
+.danhsachhoatdongganday1::before
+{
+    content: "";
+    width:15px;
+    height: 15px;
+    background-color: white;
+    position: absolute;
+    border-radius: 50%;
+    top:64px;
+    right: -9px;
+    z-index: 1;
+}
+.danhsachhoatdongganday2
+{
+    width:20%;
+    background-color: #cad2d6;
+    height: 70px;
+    margin-top: 60px;
+    border-left: 3px dashed white;
+    position: relative;
+}
+.danhsachhoatdongganday2::after
+{
+    content: "";
+    width:15px;
+    height: 15px;
+    background-color: white;
+    position: absolute;
+    border-radius: 50%;
+    top:-9px;
+    right: -9px;
+    z-index: 1;
+}
+.danhsachhoatdongganday2::before
+{
+    content: "";
+    width:15px;
+    height: 15px;
+    background-color: white;
+    position: absolute;
+    border-radius: 50%;
+    top:64px;
+    right: -9px;
+    z-index: 1;
+}
+.danhsachhoatdongganday3
+{
+    width:20%;
+    background-color: #cad2d6;
+    height: 70px;
+    margin-top: 60px;
+    border-left: 3px dashed white;
+    position: relative;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+.danhsachhoatdongganday11
+{
+    width:40%;
+    background-color: #d3bcc9;
+    height: 70px;
+    margin-top: 60px;
+    border:none;
+    border-top-left-radius: 8px ;
+    border-bottom-left-radius: 8px ;
+    position: relative;
+}
+.danhsachhoatdongganday11::after
+{
+    content: "";
+    width:15px;
+    height: 15px;
+    background-color: white;
+    position: absolute;
+    border-radius: 50%;
+    top:-9px;
+    right: -9px;
+    z-index: 1;
+}
+.danhsachhoatdongganday11::before
+{
+    content: "";
+    width:15px;
+    height: 15px;
+    background-color: white;
+    position: absolute;
+    border-radius: 50%;
+    top:64px;
+    right: -9px;
+    z-index: 1;
+}
+.danhsachhoatdongganday22
+{
+    width:20%;
+    background-color: #d3bcc9;
+    height: 70px;
+    margin-top: 60px;
+    border-left: 3px dashed white;
+    position: relative;
+}
+.danhsachhoatdongganday22::after
+{
+    content: "";
+    width:15px;
+    height: 15px;
+    background-color: white;
+    position: absolute;
+    border-radius: 50%;
+    top:-9px;
+    right: -9px;
+    z-index: 1;
+}
+.danhsachhoatdongganday22::before
+{
+    content: "";
+    width:15px;
+    height: 15px;
+    background-color: white;
+    position: absolute;
+    border-radius: 50%;
+    top:64px;
+    right: -9px;
+    z-index: 1;
+}
+.danhsachhoatdongganday33
+{
+    width:20%;
+    background-color: #d3bcc9;
+    height: 70px;
+    margin-top: 60px;
+    border-left: 3px dashed white;
+    position: relative;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+.daudanhsachhoatdongganday-chitiet1
+{
+    color:white;
+    font-size: 20px;
+    margin-left: 20px;
+    font-weight: 600;
+}
+.daudanhsachhoatdongganday-chitiet
+{
+    color:white;
+    font-size: 20px;
+    text-align: center;
+    font-weight: 600;
+}
+.phanba
+{
+    width:100%;
+    height: 1250px;
+    background-image: url(./img/nenphanba.png);
+    margin-top:900px;
+}
+.phanbadau
+{
+display: none;
+margin-left: 100px;
+margin-right: 100px;
+position: relative;
+animation: chaylentuduoi ease-in-out 0.5s;
+}
+.phanbasoba
+{
+    font-size: 180px;
+    color:#E1C69A;
+    opacity: 0.8;
+    padding-top: 100px;
+    margin-left: 60px;
+    font-weight: 600;
+    margin-bottom: 0px;
+    
+}
+.phanbatieude
+{
+    position: absolute;
+    font-size: 80px;
+    font-weight: 500;
+    left:150px;
+    top:90px;
+    z-index: 1;
+}
+.phanbathisinh
+{
+    margin-left: 160px;
+    margin-right: 146px;
+    /* display: flex;
+    flex-wrap: wrap; */
+    display: none;
+    animation: chaytuphaisang ease-in-out 1s;
+}
+.thisinh
+{
+    width:23%;
+    display: block;
+    background-color: white;
+    margin-top: 50px;
+    border-radius: 8px;
+    margin-right: 2%;
+}
+.thisinh:hover
+{
+box-shadow: 0 0 5px 3px rgb(236, 193, 106);
+}
+.anhthisinh
+{
+    width:100%;
+    height: 250px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+.tenthisinh
+{
+ margin-left: 20px;
+ font-size: 18px;
+ font-weight: 600;
+}
+.diembinhchonthisinh
+{
+    margin-left: 20px;
+    font-size: 16px;
+    font-weight: 100;
+    color: #616161;
+}
+.diem
+{
+    color:#cb8b28;
+    font-size: 20px;
+    font-weight: 600;
+}
+.nutbinhchon
+{
+width:85%;
+height: 30px;
+ margin-left: 7.5%;
+ margin-right: 7.5%;
+ margin-bottom: 7.5%;
+ border: none;
+ background-color: #ccc;
+ border-radius: 4px;
+}
+.nutbinhchon:hover
+{
+    background-color: #cb8b28;
+    color:white;
+}
+.phanbon
+{
+width:100%;
+height: 550px;
+}
+.phandaubon
+{
+width:100%;
+height: 50%;
+background-color: white;
+position: relative;
+}
+.chitietphandaubon
+{
+    position: absolute;
+    font-size: 80px;
+    top:-40px;
+    left:110px;
+    margin-left: 160px;
+}
+.buoc4
+{
+    color:#f3cbb3;
+    font-size: 150px;
+    font-weight: 600;
+    margin-top: 90px;
+    margin-bottom: 20px;
+    margin-left: 160px;
+}
+.anhlogo{
+    margin-left: 160px;
+    display: none;
+    animation: chayhienraxuongtuduoi ease-in-out 1s ;
+}
+.chitietanhlogo
+{
+    width: 100px;
+    height: 20px;
+    padding:20px;
+    margin-right: 0px;
+    margin-left: 40px;
+    box-shadow: 1px 1px 5px 1px rgb(193, 193, 243);
+    cursor: pointer;
+    transition: transform;
+}
+.chitietanhlogo:hover{
+  transform: scale(1.2);
+  box-shadow: 1px 1px 5px 1px rgb(167, 167, 245);
+}
+.phanboncuoi
+{
+    position: relative;
+    height: 200px;
+    background-image: url(./img/nenflooter.png);
+    bottom: -80px;
+    margin-left: -60px;
+    animation: chayhienraxuongtuduoi ease-in-out 1s ;
+}
+.khoa
+{
+    animation: chayhienraxuongtuduoi ease-in-out 1s ;
+}
+.thien{
+width:1600px;
+display: flex;
+margin-left:160px;
+}
+.chitietphancuoibon1
+{
+    width:100%;
+    margin-left: 170px;
+    margin-top: 20px;
+    margin-bottom: 0;
+    color: white;
+    font-size: 60px;
+}
+.chitietphancuoibon
+{
+    margin-right: 30px;
+    color: white;
+    font-weight: 600;
+    font-size: 18px;
+}
+.chitietphancuoibon2
+{
+    flex:1;
+    margin-left: 200px;
+    color: #cad2d6;
+    font-weight: 600;
+    font-size: 14px;
+    margin-top: 20px;
+}
+.gioithieu
+{
+    margin-top: 130px;
+    margin-left: 140px;
+    margin-right: 140px;
+    width:80%;
+    height: 1150px;
+    border: 2px solid #ccc;
+    border-top: 6px solid #cb8b28;
+    padding-top: 20px;
+    margin-bottom: 50px;
+}
+.missvote-body_content_gioithieu
+{
+    padding-left: 50px;
+    padding-right: 50px;
+    font-size: 20px;
+    color: #cb8b28;
+    font-weight: 700;
+}
+.chitietgioithieu
+{
+    padding-left: 50px;
+    padding-right: 50px;
+    text-align: justify;
+    line-height: 24px;
+    color: rgb(56, 55, 55);
+    font-size: 16px;
+}
+.cacbuoc
+{
+    font-weight: 900;
+    color: #0e0d0d;
+}
+.phanboncuoigioithieu
+{
+    position: relative;
+    height: 250px;
+    background-image: url(./img/nenflooter.png);
+    bottom: -80px;
+    margin-left: -200px;
+    animation: chayhienraxuongtuduoi ease-in-out 1s ;
+    width: 130.2%;
+}
+.khoagioithieu
+{
+    animation: chayhienraxuongtuduoi ease-in-out 1s ;
+}
+.thiengioithieu{
+width:85%;
+display: flex;
+margin-left:160px;
+}
+.chitietphancuoibon1gioithieu
+{
+    width:50%;
+    margin-left: 170px;
+    margin-top: 20px;
+    color: white;
+    font-size: 60px;
+    padding: 20px;
+    margin-bottom: 10px;
+}
+.chitietphancuoibongioithieu
+{
+    margin-right: 30px;
+    color: white;
+    font-weight: 600;
+    font-size: 18px;
+}
+.chitietphancuoibon2gioithieu
+{
+    flex:1;
+    margin-left: 150px;
+    color: #cad2d6;
+    font-weight: 600;
+    font-size: 14px;
+    margin-top: 20px;
+}
+.bangxephang
+{
+    text-align: center;
+    font-size: 50px;
+    font-weight: 600;
+    color: #0e0e0e;
+    line-height: 10px;
+}
+.cuocthibangxephang
+{
+    text-align: center;
+    font-size: 35px;
+    font-weight: 600;
+    color: #cb8b28;
+    line-height: 10px;
+}
+.anhxephangthisinh
+{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: #f0b660;
+    padding: 4px;
+}
+.vitri1
+{
+    margin-left: 42%;
+}
+.vitri2
+{
+    margin-left: 30%;
+}
+.vitri3
+{
+    margin-left: 10%;
+    margin-right: 20%;
+}
+.vitri4
+{
+    border-radius: 10%;
+    width: 150px;
+    height: 150px;
+    margin-left: 20%;
+    margin-top: 5%;
+}
+.vitri5
+{
+    border-radius: 10%;
+    width: 150px;
+    height: 150px;
+    margin-left: 4%;
+    margin-top: 5%;
+}
+.vitri6
+{
+    border-radius: 10%;
+    width: 150px;
+    height: 150px;
+    margin-left: 4%;
+    margin-top: 5%;
+}
+.vitri7
+{
+    border-radius: 10%;
+    width: 150px;
+    height: 150px;
+    margin-left: 4%;
+    margin-top: 5%;
+}
+.hien
+{
+    display: block;
+}
+.hien1
+{
+    animation: chayra ease-in-out 1s forwards;
+    display: block;
+}
+.hien11
+{
+    display: flex;
+    flex-wrap: wrap;
+}
+.hien2
+{
+    animation: chayraanh ease-in-out 1s forwards;
+    display: block;
+}
+.hien3
+{
+    animation: chayxuongtutren ease-in-out 1s forwards;
+    display: block;
+}
+.hien4
+{
+    animation: chaytuphaira ease-in-out 1s forwards;
+    display: flex;
+    flex-wrap: wrap;
+}
+.hien5
+{
+    animation: chaymatxuongtuduoi ease-in-out 1s forwards;
+    display: flex;
+    flex-wrap: wrap;
+}
+.hien6
+{
+ background-color: white;
+ opacity: 0.9;
+}
+.hien7
+{
+    color:rgb(133, 128, 128);
+}
+.chinh.hien7{
+    color:rgb(0, 0, 0);
+}
+.hien7::after
+{
+background-color: black;
+}
+.hien7:hover::after
+{
+background-color: black;
+}
+.chucnang
+{
+    display: block;
+}
